@@ -1,0 +1,12 @@
+.wrapper {
+  margin: 1rem auto;
+  border: 1px solid red;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  width: 50%;
+  .message {
+    color: red;
+    text-align: center;
+  }
+}
+

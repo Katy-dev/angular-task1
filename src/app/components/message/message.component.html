@@ -1,0 +1,12 @@
+<div class="message_wrapper"
+     *ngIf="messageService.messages.length">
+  <h3>Messages</h3>
+  <div
+    [ngStyle]="{
+    color: messageService.messages.length > 5 ? 'grey': 'black'}"
+    [ngClass]="{
+    borderMessage: messageService.messages.length > 5 }"
+    *ngFor='let message of messageService.messages'>
+    {{message}}
+  </div>
+</div>
